@@ -19,15 +19,15 @@ singed/unsigned --> char/int
 
 long long
 
--> Ámbito, visibilidad (scope)
--> Modificadores
+-> Ámbito, visibilidad (scope) 
+-> Modificadores 
 
 	IMPORTANTE -> 1 0 1 1 [] [] [] []	el signed/unsigned da valores a los bits de los números
 
-signed char
-unsigned char
+signed char 
+unsigned char 
 
-ej:
+ej: 
 unsigned int i;
 	i=30;
 	while (i>=0){
