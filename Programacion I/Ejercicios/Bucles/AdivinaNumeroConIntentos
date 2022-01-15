@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class AdivinaNumeroConIntentos
+{
+  public static void main (String[] args)
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Introduce un numero para adivinar");
+    int n=sc.nextInt();
+    System.out.println("El numero de intentos es " + adivinaNumero(n));
+  }
+  public static int adivinaNumero(int n)
+  {
+    Scanner sc=new Scanner(System.in);
+    int i=0;
+    int contador=0;
+    System.out.println("NO MIRES ARRIBA");
+    System.out.println("NO MIRES ARRIBA");
+    while (i!=n)
+    {
+      System.out.println("Introduce un numero");
+      i=sc.nextInt();
+      if (i<n)
+        System.out.print("El numero introducido es menor al requerido, ");
+      else if (i>n)
+        System.out.print("El numero introducido es mayor al requerido, ");
+      contador++;
+    }
+    return contador;
+  }
+}
